@@ -4,7 +4,7 @@ Buna ziua,
 
 Din pacate PyCharm nu imi functiona astfel incat sa incarc tot folder-ul in repo, asa ca am incarcat doar fisierele .py.
 Probabil am facut si eu ceva gresit, desi nu este diferit fata de AzureDevOps pe care il folosesc zilnic la munca :D. 
-Am ajuns la concluzia ca poate este PyCharm-ul pentru ca imi spunea continuu ca aplicatia GitHub nu este instalata, but it is. 
+Am ajuns la concluzia ca poate este PyCharm-ul pentru ca imi spunea continuu ca aplicatia GitHub nu este instalata, although it is.  
 
 main.py : este pentru a vedea si modificarile de "image processing" realizate cu matplotlib.pyplot
 
