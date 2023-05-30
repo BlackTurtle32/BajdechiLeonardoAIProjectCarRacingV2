@@ -43,6 +43,31 @@ def getRoadCenterValue(observation):
     try:
         middle = (nz[:, 0, 0].max() + nz[:, 0, 0].min()) / 2
         print(f'Road middle value: {middle}')
+        middle = (nz[:, 0, 0].max() + nz[:, 0, 0].min()) / 2
+        print(f'Road middle value: {middle}')
+
+        # Plotting the transformations
+        plt.figure(figsize=(12, 6))
+        plt.subplot(2, 3, 1)
+        plt.imshow(observation)
+        plt.title('Original Image')
+        plt.subplot(2, 3, 2)
+        plt.imshow(blurred, cmap='gray')
+        plt.title('Blurred Image')
+        plt.subplot(2, 3, 3)
+        plt.imshow(thresh, cmap='gray')
+        plt.title('Thresholded Image')
+        plt.subplot(2, 3, 4)
+        plt.imshow(closed, cmap='gray')
+        plt.title('Closed Image')
+        plt.subplot(2, 3, 5)
+        plt.imshow(canny, cmap='gray')
+        plt.title('Canny Edges')
+        plt.subplot(2, 3, 6)
+        plt.imshow(dilated, cmap='gray')
+        plt.title('Dilated Image')
+        plt.tight_layout()
+        plt.show()
     except:
         print('Error 404: Road Middle Not Found')
     return middle, 1
